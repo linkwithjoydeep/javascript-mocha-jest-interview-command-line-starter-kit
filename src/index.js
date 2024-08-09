@@ -6,9 +6,10 @@
 function main() {
     const input = process.argv.slice(2)
     if (input.length === 0) {
-        throw new Error("No string passed")
+        throw new Error("no command line arguments passed")
     }
-    handle(input[0])
+    var output = handle(input[0])
+    console.log(output)
 }
 
 
@@ -17,8 +18,9 @@ function main() {
  * Make sure to print out the solution.
  */
 function handle(input) {
-    console.log(input)
-    //TODO: implement the logic to handle each input
+    //TODO: implement the logic to handle each input and return the finall output at the end of the function.
+    return input
 }
+
 
 main()
