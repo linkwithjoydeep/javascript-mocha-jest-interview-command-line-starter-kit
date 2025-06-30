@@ -5,3 +5,4 @@ LICENSE
 package.json
 yarn.lock
 package-lock.json
+.theia/
