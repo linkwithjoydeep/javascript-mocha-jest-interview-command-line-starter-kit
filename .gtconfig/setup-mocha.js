@@ -115,6 +115,7 @@ try {
     // Increment reload trigger counter
     const currentCounter = settings["live-interview-companion.reloadTriggerCounter"] || 0;
     settings["live-interview-companion.reloadTriggerCounter"] = currentCounter + 1;
+    settings["jest.enable"] = false;
 
     // Write updated settings
     console.log(`🔄 Reloading workspace (counter: ${currentCounter + 1})`);
